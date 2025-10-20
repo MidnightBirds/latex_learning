@@ -4,6 +4,10 @@
 
 \begin{document}
 “你好，世界！”来自 \LaTeX{} 的问候。\\
+\title{l}
+\author{me}
+\date{\today}
+\maketitle
 \tableofcontents 
 \input{part} \\ \par
 \section{中文}
@@ -27,7 +31,12 @@ Donald~E.~Knuth \newline
 111 
 
 \newpage
-222
+222 \par
+
+A reference to this subsection
+\label{aaa} looks like:
+``see section~\ref{aaa} on
+page~\pageref{aaa}.''\footnote{这是一个脚注}
 
 \end{document}
 
