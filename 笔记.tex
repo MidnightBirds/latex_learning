@@ -43,5 +43,85 @@
 % \label{} 位置： 
 
 %脚注 \footnote{脚注内容}
+%边注 \marginpar{\footnotesize 边注内容}   字数更小
 
+%列表 有序列表 列表可以嵌套使用，最多嵌套四层
+\begin{enumerate}
+\item[⟨item title⟩] …
+\end{enumerate}
+%有序列表的符号由命令 \labelenumi 到 \labelenumiv 定义
+% \renewcommand{\labelenumi}%
+% {\Alph{enumi}>}
+
+
+%无序列表
+\begin{itemize}
+\item[⟨item title⟩] …
+\end{itemize}
+%符号由命令 \labelitemi 到 \labelitemiv 定义
+%\renewcommand{\labelitemi}{\ddag}
+%\renewcommand{\labelitemii}{\ddag}
+
+%描述列表
+\begin{description}
+\item[⟨item title⟩] …
+\end{description}
+
+%对齐环境
+\begin{flushleft}
+\end{flushleft}
+
+\begin{flushright}
+\end{flushright}
+
+\begin{center}
+\end{center}
+%改变对齐方式，使用后要调整回来
+%\centering
+%\raggedleft
+%\raggedright
+
+%引用环境
+\begin{quote}
+\end{quote}
+
+\begin{quotation}
+\end{quotation}
+
+\begin{verse}
+\end{verse}
+
+%摘要环境
+\begin{abstract}
+\end{abstract}
+
+
+%代码环境
+% 回车和空格也分别起到换行和空位的作用
+\begin{verbatim}
+#include <iostream>
+int main()
+{
+    std::cout << "Hello, world!"
+    << std::endl;
+    return 0;
+}
+\end{verbatim}
+%\verb 命令   排版简短的代码或关键字
+\verb⟨delim⟩⟨code⟩⟨delim⟩
+%⟨delim⟩习惯上使用 | 符号
+
+%表格 tabular
+%列格式：
+% |c| 居中
+% |l| 左对齐
+% |r| 右对齐
+\begin{tabular}{⟨列格式⟩}
+  ⟨表格内容⟩
+\end{tabular}
+
+
+
+%图片 
+% 需要调用graphicx宏包
 \end{document}

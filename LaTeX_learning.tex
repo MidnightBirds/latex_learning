@@ -1,15 +1,23 @@
 \documentclass{ctexart}
 
-
+\usepackage{amsmath}
 
 \begin{document}
+
+
+
 “你好，世界！”来自 \LaTeX{} 的问候。\\
 \title{l}
 \author{me}
 \date{\today}
 \maketitle
+\begin{abstract}
+    摘要在这里，一般在一页开头。
+
+\end{abstract}
 \tableofcontents 
 \input{part} \\ \par
+
 \section{中文}
 
 在\LaTeX{}中排版中文。
@@ -36,7 +44,97 @@ Donald~E.~Knuth \newline
 A reference to this subsection
 \label{aaa} looks like:
 ``see section~\ref{aaa} on
-page~\pageref{aaa}.''\footnote{这是一个脚注}
+page~\pageref{aaa}.''
+\footnote{这是一个脚注}
+\marginpar{\footnotesize 小字边注}
+
+
+\renewcommand{\labelenumi}%
+{\Alph{enumi}>}
+\renewcommand{\labelitemi}{\ddag}
+\begin{enumerate}
+\item 1111
+\item 2222
+\begin{itemize}
+    \item 3333
+    \item 4444
+\end{itemize}
+\item 5555
+\end{enumerate}
+
+\begin{description}
+\item[Main] a
+\item[Test] b
+\item[Eval] c  
+\end{description}
+
+\begin{center}
+    中心对齐的文本
+\end{center}
+
+\begin{flushleft}
+    左对齐的文本
+\end{flushleft}
+
+\begin{flushright}
+    右对齐的文本
+\end{flushright}
+
+\centering 中心对齐的文本
+1111111 \\
+\raggedleft
+右对齐的文本 \\
+\raggedright
+2222222 \par
+短文本：
+\begin{quote}
+    引用较短的文字
+\end{quote}
+长文本：
+\begin{quotation}
+引用几段文字或者长文字
+
+引用几段文字或者长文字
+\end{quotation}
+诗歌：
+\begin{verse}
+    引用诗歌
+
+    首行悬挂缩进
+
+\end{verse}
+
+\begin{center}
+    $ \min(Y-\phi\widehat{\theta})^{T}(\theta-\phi\widehat{\theta}) $\\
+    $ \widehat{\theta}=(\phi^{T}\phi)^{-1}\phi^{T}Y   $\\
+    $ A_i=\int_0^\infty [1-h^{*}(t)]\frac{(-t)^{i-1}}{(i-1)!}dt+\sum_{k=1}^{i-1} A_{i-k} \int_0^\infty [1-h^{*}(t)]\frac{(-t)^{i-1}}{(i-1)!} dt$
+
+\end{center}
+
+% 正文中的使用
+\begin{equation*}
+\begin{bmatrix}a_1 \\ a_2 \\\vdots \\ a_n\end{bmatrix}=\begin{bmatrix}A_1 \\ A_2 \\\vdots \\ A_n\end{bmatrix}
+\end{equation*}
+
+\begin{verbatim}
+#include <iostream>
+int main()
+{
+    std::cout << "Hello, world!"
+        << std::endl;
+    return 0;
+}
+\end{verbatim}
+\verb|(a || b)++|
+
+\begin{tabular}{|c|c|c|}
+  \hline
+  左对齐 & 居中 & 右对齐 \\
+  \hline
+  数据1 & 数据2 & 数据3 \\
+  数据4 & 数据5 & 数据6 \\
+  \hline
+\end{tabular}
 
 \end{document}
 
