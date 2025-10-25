@@ -1,6 +1,6 @@
 \documentclass{ctexart}
 
-
+\usepackage{array, tabularx}
 
 \begin{document}
 %  \\只用于分行(可选择增加竖直间距)
@@ -116,12 +116,36 @@ int main()
 % |c| 居中
 % |l| 左对齐
 % |r| 右对齐
-\begin{tabular}{⟨列格式⟩}
+% p{⟨width⟩} 自定义宽度
+\begin{tabular}{⟨列格式⟩ p{⟨width⟩}}
   ⟨表格内容⟩
 \end{tabular}
-
-
+%高级使用表格 array宏包 tabularx宏包
+%X 列格式 自动计算列宽
+\begin{tabularx}{14em}
+  {|*{4}{>{\centering\arraybackslash}X|}}
+  \hline
+  A & B & C & D \\
+  \hline
+  ABC & BCD & CDE & DEF \\
+  \hline
+\end{tabularx}
+%\cline{⟨i⟩-⟨j⟩} 用来绘制跨越部分单元格的横线
+%合并单元格
+%\multicolumn{⟨n⟩}{⟨column-spec⟩}{⟨item⟩}
 
 %图片 
 % 需要调用graphicx宏包
+%\includegraphics[⟨options⟩]{⟨filename⟩}
+%option选项
+% width=⟨length⟩ 设置图片宽度
+% height=⟨length⟩ 设置图片高度
+% scale=⟨factor⟩ 缩放图片
+% angle=⟨angle⟩ 旋转图片
+
+% 盒子
+%水平盒子
+\mbox{text}
+
+
 \end{document}

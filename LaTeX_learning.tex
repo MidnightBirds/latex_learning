@@ -1,7 +1,8 @@
 \documentclass{ctexart}
 
 \usepackage{amsmath}
-
+\usepackage{array, tabularx}
+\usepackage{graphicx}
 \begin{document}
 
 
@@ -126,15 +127,36 @@ int main()
 }
 \end{verbatim}
 \verb|(a || b)++|
-
+\\
+\centering
 \begin{tabular}{|c|c|c|}
   \hline
   左对齐 & 居中 & 右对齐 \\
   \hline
   数据1 & 数据2 & 数据3 \\
+  \cline{1-2}
   数据4 & 数据5 & 数据6 \\
   \hline
 \end{tabular}
-
+\par
+\begin{tabularx}{14em}
+  {|*{4}{>{\centering\arraybackslash}X|}}
+  \hline
+  A & B & C & D \\
+  \hline
+  ABC & BCD & CDE & DEF \\
+  \hline
+\end{tabularx}
+\par
+\begin{tabular}{|c|c|c|}
+    \hline
+    1 & 2 & 3 \\
+    \hline
+    \multicolumn{2}{|c|}{3} & 4\\
+    \hline
+    
+\end{tabular}
+\par
+\includegraphics[scale = 0.1]{test.jpg}
 \end{document}
 
