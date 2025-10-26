@@ -145,7 +145,22 @@ int main()
 
 % 盒子
 %水平盒子
-\mbox{text}
+%\makebox[⟨width⟩][⟨align⟩]{…}
 
+%带框的盒子
+%\framebox[⟨width⟩][⟨align⟩]{…}
 
+%可以换行的盒子
+%\parbox[⟨align⟩][⟨height⟩][⟨inner-align⟩]{⟨width⟩}{…}
+\begin{minipage}[⟨align⟩][⟨height⟩][⟨inner-align⟩]{⟨width⟩}
+…
+\end{minipage}
+
+%实心盒子
+%\rule[⟨raise⟩]{⟨width⟩}{⟨height⟩}
+
+% 浮动体
+\begin{table}[⟨placement⟩]
+  
+\end{table}
 \end{document}
