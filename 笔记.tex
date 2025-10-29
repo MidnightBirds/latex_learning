@@ -159,8 +159,47 @@ int main()
 %实心盒子
 %\rule[⟨raise⟩]{⟨width⟩}{⟨height⟩}
 
-% 浮动体
+% 浮动体   大块的内容可以脱离上下文设置
+% h 当前位置（代码所处的上下文）
+% t 顶部
+% b 底部
+% p 单独成页
+% ! 在决定位置时忽视限制
 \begin{table}[⟨placement⟩]
   
 \end{table}
+%\caption{…} 添加标题 （内部使用）
+
+
+
+%排版数学公式
+% 数学模式 数学模式中输入的空格被忽略 \quad为空格
+\usepackage{amsmath}
+%行内公式 与文字混排
+% 用一对$$包围
+The Pythagorean theorem is
+$a^2 + b^2 = c^2$.
+%行间公式 分行，生成编号
+\begin{equation}
+  % \tag 命令手动修改公式的编号
+  % \notag 取消为公式编号
+  a^2 + b^2 = c^2
+\end{equation}
+
+%行间公式 将公式用命令 \[ 和 \] 包裹  不带编号
+\[ a^2 + b^2 = c^2 \]
+
+%如果想正常打文本
+%\textbf{} 加粗
+%\text{} 文本
+
+%指数 ^{}  下标 _{}
+%导数符号'(′) 是一类特殊的上标，可连续使用，但只能在其后添加其他上标
+
+%分式 \frac{}{}  根式 \sqrt[]{}   二项式 \binom{}{}
+
+%关系符号  =，>，<直接输入
+%特殊  \ne \ge \le \approx \equiv \propto \sim
+
+%算符 
 \end{document}

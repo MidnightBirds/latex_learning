@@ -1,6 +1,6 @@
 \documentclass{ctexart}
 
-\usepackage{amsmath}
+\usepackage{amsmath, amssymb}
 \usepackage{array, tabularx}
 \usepackage{graphicx}
 \begin{document}
@@ -112,10 +112,25 @@ page~\pageref{aaa}.''
 
 \end{center}
 
+
+
+
 % 正文中的使用
 \begin{equation*}
 \begin{bmatrix}a_1 \\ a_2 \\\vdots \\ a_n\end{bmatrix}=\begin{bmatrix}A_1 \\ A_2 \\\vdots \\ A_n\end{bmatrix}
 \end{equation*}
+
+$ K_{N+1}=P_N\phi_{N+1}(1+\phi_{N+1}^{T}P_N\phi_{N+1})^{-1} $\\
+$ \widehat{\theta_{N+1}}=\widehat{\theta_N}+K_{N+1}(y_{N+1}-\phi_{N+1}^T\widehat{\theta_N}) $\\
+$ P_{N+1}=P_N-K_{N+1}\phi_{N+1}^TP_N $\\
+
+
+$ I=\frac{R+G+B}{3} $\\
+$ S=1-\frac{3}{R+G+B}[min(R,G,B)] $\\
+$ H=\arccos\frac{[(R-G)+(R-B)]/2}{[(R-G)^2+(G-B)(R-B)]^\frac{1}{2}} $
+
+
+
 
 \begin{verbatim}
 #include <iostream>
@@ -166,6 +181,30 @@ int main()
     数据1 数据2 数据3
 \end{minipage}
 \par
-\rule{5pt}{8pt}
+\rule{5pt}{8pt}\\
+
+\begin{table}[h]
+
+  这是一个浮动体\caption{标题}
+
+\end{table}
+
+\par 
+The Pythagorean theorem is
+$a^2 + b^2 = c^2$.
+
+\begin{equation}
+    a^2 + b^2 = c^2
+\end{equation} \\
+\[ a^2 + b^2 = c^2 \] \par
+中文之间的空格会被忽略，使用\textbackslash quad可以 \quad 解决 \\
+
+$x^{2} \geq 0 \qquad
+\text{for \textbf{all} }
+x$ \\
+$f(x) = x^2 \quad f'(x) = 2x \quad f''^{2}(x) = 4$ \\
+$ \sqrt[3]{x} \quad \sqrt[4]{x} \quad \sqrt[5]{x} \quad \sqrt[6]{x} $\\
+$ \binom{n}{k} = \binom{n}{k-1} + \binom{n-1}{k-1} $\\
+$ \ne \ge \le \approx \equiv \propto \sim $
 \end{document}
 
