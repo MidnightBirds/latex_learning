@@ -1,6 +1,6 @@
 \documentclass{ctexart}
 
-\usepackage{amsmath, amssymb}
+\usepackage{amsmath, amssymb, amsthm}
 \usepackage{array, tabularx}
 \usepackage{graphicx}
 \begin{document}
@@ -249,5 +249,20 @@ $ \mathcal{A B C D E F G H I J K L M N O P Q R S T U V W X Y Z} $\\
 $ \mathfrak{A B C D E F G H I J K L M N O P Q R S T U V W X Y Z} $\\
 $  \boldsymbol{\alpha \beta \gamma \delta \epsilon \zeta \eta \theta \iota \kappa \lambda \mu \nu \xi o \pi \rho \sigma \tau \upsilon \phi \chi \psi \omega} $\\
 $ \boldsymbol{A B \Gamma \Delta E Z H \Theta I K \Lambda M N \Xi O \Pi P \Sigma T \Upsilon \Phi X \Psi \Omega} $\\
+$ \displaystyle \int_{a}^{b}f(x)dx = \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n}f(\frac{k}{n}) $ \\
+$ \textstyle \int_{a}^{b}f(x)dx = \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n}f(\frac{k}{n}) $ \\
+$ \scriptstyle \int_{a}^{b}f(x)dx = \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n}f(\frac{k}{n}) $ \\
+$ \scriptscriptstyle \int_{a}^{b}f(x)dx = \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}^{n}f(\frac{k}{n}) $ \\
+\newpage
+\newtheorem{env}{Theorem}
+
+\begin{env}[一个定理]
+    这是一个定理
+\end{env}
+\begin{proof}
+    这是一个证明 \par
+    证毕
+\end{proof}
+
 \end{document}
 
