@@ -248,9 +248,40 @@ $a^2 + b^2 = c^2$.
 \end{proof}
 
 
-
 %排版样式设定
+%字体大小 \tiny \scriptsize \footnotesize \small \normalsize \large \Large \LARGE \huge \Huge
+%常用{}控制范围
+%\fontsize{size}{skip}
+%\fontsize 的设定需要 \selectfont 命令才能立即生效
+
+%字体样式 \textrm{} \textit{} \textsc{} \texttt{} \textsf{} \textbf{}
 
 
+%文字修饰与强调
+%下划线 \underline{}    不能分行
+%ulem宏包中 \uline{}
+
+%强调 \emph{}  文字变为斜体以示强调
+
+% 长度与长度变量
+% 弹性长度 例如： 12pt plus 2pt minus 1pt
+
+% 长度单位
+% pt  磅 1/72.27
+% in  英寸
+% cm  厘米
+% mm  毫米
+% bp  1/72
+% ex  当前字体的x高度
+% em  当前字体的M宽度
+% sp  1/65536磅
+% 缩进 \indent \noindent
+
+%自定义长度变量
+\newlength{\mylen}
+\setlength{\mylen}{lenght}
+\addtolength{\mylen}{lenght}
+
+% 行距
 
 \end{document}

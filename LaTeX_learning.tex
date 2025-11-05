@@ -3,17 +3,18 @@
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{array, tabularx}
 \usepackage{graphicx}
+\usepackage{ulem}
 \begin{document}
 
 
 
-“你好，世界！”来自 \LaTeX{} 的问候。\\
+
 \title{l}
 \author{me}
 \date{\today}
 \maketitle
 \begin{abstract}
-    摘要在这里，一般在一页开头。
+    摘要在这里，一般在一页开头。\\“你好，世界！”来自 \LaTeX{} 的问候。\\
 
 \end{abstract}
 \tableofcontents 
@@ -37,9 +38,7 @@ It's dif{}f{}icult to f{}ind \ldots \\
 \dots \\
 \ldots \\
 Donald~E.~Knuth \newline
-111 
-
-\newpage
+111 \par
 222 \par
 
 A reference to this subsection
@@ -189,7 +188,9 @@ int main()
 
 \end{table}
 
-\par 
+\newpage
+\section{数学公式}
+
 The Pythagorean theorem is
 $a^2 + b^2 = c^2$.
 
@@ -263,6 +264,21 @@ $ \scriptscriptstyle \int_{a}^{b}f(x)dx = \lim_{n\to\infty}\frac{1}{n}\sum_{k=1}
     这是一个证明 \par
     证毕
 \end{proof}
-
+{\tiny 字体大小}
+{\scriptsize 字体大小}
+{\footnotesize 字体大小}
+{\small 字体大小}
+{\normalsize 字体大小}
+{\large 字体大小}
+{\Large 字体大小} \\
+{\LARGE 字体大小}
+{\huge 字体大小}
+{\Huge 字体大小}\\
+\fontsize{40pt}{50pt}
+字体大小 \\ 间距 \\
+\normalsize 正常的大小符，
+\underline{带下划线的字} \\
+\uline{带下划线的字,并且可以自动换行。} \\
+{可以使用强调，本质上是 \emph{进行斜体}。} \\
 \end{document}
 
