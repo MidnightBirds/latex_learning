@@ -1,0 +1,61 @@
+\documentclass{ctexart}
+\usepackage[landscape, margin=0.5cm]{geometry}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\begin{document}
+\fontsize{8.5pt}{10pt}\selectfont
+\noindent
+\begin{minipage}[t]{0.315\linewidth}
+\vspace{0pt}
+\textbf{第一章绪论：}\\
+1.像素在数字图像上具有固定的(x,y)空域坐标以及该点的值f(x,y)，其特征为：
+x,y,f(x,y)均为离散值和有限值。（f(x,y)常代表图像的intensity或gray等级）
+（空域坐标系下y右x）\\
+2.数字图像的形式：单通道（B\&W或者灰度等级）\ 三通道（RGB）\ 四通道（RGB+Alpha）深度\\
+3. \textbf{(光杆颜锥)}锥状体（少）集中在中央凹附近，对颜色极其敏感；杆状体（多）的分布较为分散，
+对低亮度的光照敏感。（两者均不在盲点上有分布）（锥状体（cones），杆状体（rods））\\
+4.\textbf{图像不仅仅由电磁波生成，超声波等都可以}（B超）\\
+5.\textbf{DIP与计算机视觉、机器人视觉、机器视觉的区别：}\textbf{DIP：}对图像的基础
+操作，如几何变换，增强恢复，锐化滤波等，结果仍为图像。\textbf{计算机视觉：}对给定的图
+像进行信息提取，如运动检测物体识别，获得具体数据。\textbf{机器视觉：}用于自动化生产，
+由机器自主获取图像等信息来获得具体数据，需要多传感器结合。\textbf{机器人视觉：}对象是
+机器人，使机器人具备视觉能力完成各项任务。\\
+\textbf{第二章数字图像基础：}\\
+1.采样量化：数字图像的生成需要经过采样和量化的过程。坐标值(x,y)的数字化就是采样，
+值f(x,y)的数字化就是量化。\\
+2.\textbf{灰度分辨率：}$2^k$.大小为$M\times N$的数字图像一般用矩阵表示，其占用的储存空间
+为：$M\times N\times $k(比特)。空域分辨率为$M\times N$。\\
+3.图片的Zooming和Shrinking可用最邻近插值或者双线性插值，前者的缺点是精度低，可能会存在灰度
+上的不连续，在变化的地方出现明显的锯齿状。
+双线性：$g\left(E\right)=\left(x^\prime-i\right)\left[g\left(B\right)-g\left(A\right)\right]+g\left(A\right)\ $
+\\$g\left(F\right)=\left(x^\prime-i\right)\left[g\left(D\right)-g\left(C\right)\right]+g\left(C\right)\ $
+\\$g\left(E\right)=\left(x^\prime,y^\prime\right)\left[g\left(F\right)-g\left(E\right)\right]+g(E) $
+\\（无论上、降采样，图片所包含内容不变，只是空间分辨率变了）\\
+4.像素p的4邻域（十字形$N_4$）、D邻域（4个对角D）和8邻域（一圈$N_8$）。
+\textbf{两个像素p和q之间的4邻接（p在q的$N_4$）、8邻接（p在q的$N_8$）和m邻接
+（p在q的$N_D$且p的$N_4$与q的$N_4$相交为空；或p在q的$N_4$）}\\
+连通（所有连通的像素构成通路）：邻接+像素值都属于集合V。
+连通分量: 对于S中的任何像素p，S中连通到该像素的像素集
+称为S的连通分量。连通集：只有一个连通分量的集合。\\
+5.欧几里得距离（De）、街区距离（D4 $\left|x-s\right|+\left|y-t\right|$）和棋盘距离
+（D8 max（$\left|x-s\right|,\left|y-t\right|$））的概念。（注：D4为菱形，D8为方形）\\
+\textbf{第三章：灰度变换和空间滤波（图像增强）高光\ 降噪\ 视觉感染力}\\
+1.对于空域，我们的操作一般是针对像素的邻居。若直接对像素本身进行操作，则称为灰度
+变换s=T(r)；否则为空间滤波g(x,y)=T(f(x,y))\ ，多使用掩模。\\
+2.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\\
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\\
+
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.315\linewidth}
+\vspace{0pt}
+这里是第二列的内容。文字会正常换行，这里可以写很多文字来测试换行效果。
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.315\linewidth}
+\vspace{0pt}
+这里是第三列的内容。文字会正常换行，这里可以写很多文字来测试换行效果。
+\end{minipage}
+
+\end{document}
