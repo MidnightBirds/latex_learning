@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.26)  6 NOV 2025 13:26
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.26)  7 NOV 2025 11:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -331,40 +331,45 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 26.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8.5> on input line 26.
+(Font)              <8.5> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.94997> on input line 26.
+(Font)              <5.94997> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.25> on input line 26.
+(Font)              <4.25> on input line 25.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--47
+Underfull \hbox (badness 10000) in paragraph at lines 9--47
 \TU/lmr/m/n/8.5 3. \TU/SimSun(0)/m/n/8.5 图 片 的 \TU/lmr/m/n/8.5 Zooming \TU/SimSun(0)/m/n/8.5 和 \TU/lmr/m/n/8.5 Shrinking \TU/SimSun(0)/m/n/8.5 可 用 最 邻 近 插 值 或
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--47
+Underfull \hbox (badness 10000) in paragraph at lines 9--47
 \TU/SimSun(0)/m/n/8.5 者 双 线 性 插 值，|  前 者 的 缺 点 是 精 度 低，|  可 能 会 存 在 灰 度
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--47
+Underfull \hbox (badness 10000) in paragraph at lines 9--47
 \TU/SimSun(0)/m/n/8.5 上 的 不 连 续，|  在 变 化 的 地 方 出 现 明 显 的 锯 齿 状。|  双 线 性：|
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 10--47
+Underfull \hbox (badness 1824) in paragraph at lines 9--47
 \TU/lmr/m/n/8.5 1. \TU/SimSun(0)/m/n/8.5 对 于 空 域，|  我 们 的 操 作 一 般 是 针 对 像 素 的 邻 居。|  若 直 接 对 像
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--47
-\TU/SimSun(0)/m/n/8.5 素 本 身 进 行 操 作，|  则 称 为 灰 度 变 换 \TU/lmr/m/n/8.5 s=T(r)\TU/SimSun(0)/m/n/8.5 ；|  否 则 为 空 间 滤 波
+Underfull \hbox (badness 10000) in paragraph at lines 9--47
+\TU/SimSun(0)/m/n/8.5 素 本 身 进 行 操 作，|  则 称 为 灰 度 变 换 \TU/lmr/m/n/8.5 s=T(r)\TU/SimSun(0)/m/n/8.5 。|  否 则 为 空 间 滤 波
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--47
+Underfull \hbox (badness 10000) in paragraph at lines 9--47
+\TU/lmr/m/n/8.5 2. \TU/SimSun(0)/m/n/8.5 如 果 想 将 一 个 物 体 从 背 景 分 离，|  可 以 使 用 阈 值 变 换
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--89
 
  []
 
@@ -372,19 +377,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--47
 
 [1
 
-] (./dip.aux)
+]
+
+[2] (./dip.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7288 strings out of 473832
- 222113 string characters out of 5730863
- 643230 words of memory out of 5000000
- 30308 multiletter control sequences out of 15000+600000
+ 7315 strings out of 473832
+ 223838 string characters out of 5730863
+ 673230 words of memory out of 5000000
+ 30335 multiletter control sequences out of 15000+600000
  563321 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,5n,111p,384b,360s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on dip.pdf (1 page).
+Output written on dip.pdf (2 pages).

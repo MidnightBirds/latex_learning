@@ -6,7 +6,6 @@
 \fontsize{8.5pt}{10pt}\selectfont
 \noindent
 \begin{minipage}[t]{0.315\linewidth}
-\vspace{0pt}
 \textbf{第一章绪论：}\\
 1.像素在数字图像上具有固定的(x,y)空域坐标以及该点的值f(x,y)，其特征为：
 x,y,f(x,y)均为离散值和有限值。（f(x,y)常代表图像的intensity或gray等级）
@@ -41,21 +40,83 @@ x,y,f(x,y)均为离散值和有限值。（f(x,y)常代表图像的intensity或g
 （D8 max（$\left|x-s\right|,\left|y-t\right|$））的概念。（注：D4为菱形，D8为方形）\\
 \textbf{第三章：灰度变换和空间滤波（图像增强）高光\ 降噪\ 视觉感染力}\\
 1.对于空域，我们的操作一般是针对像素的邻居。若直接对像素本身进行操作，则称为灰度
-变换s=T(r)；否则为空间滤波g(x,y)=T(f(x,y))\ ，多使用掩模。\\
-2.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\\
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\\
+变换s=T(r)。否则为空间滤波g(x,y)=T(f(x,y))\ ，多使用掩模。\\
+2.如果想将一个物体从背景分离，可以使用阈值变换
+$s=1.0(r>threshold)+0.0(r<=threshold)$。若输入的图像灰度分辨率很大，可使用
+\textbf{对数变换}$s=c\ast log(l+r)$。
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.315\linewidth}
+\textbf{幂律变化}$s=c\ast r^y$则可以将一个较窄范围的灰度等级映射到较大范围的
+灰度等级(注：小凸大凹) (整体变暗，y>1)或将图像整体变亮（y<1凸显脊柱改善欠曝光）；
+由于显示器、打印机等对不同亮度的响应非线性，而是指数$s=r^y$，所以使用
+\textbf{y校正}$s=r^\frac{1}{y}$来处理；灰度切片（变换函数T为分段函数）类似于
+阈值变换，对于突出图像中某些特征起作用。\\
+\textbf{比特平面分层}中高阶比特平面包含了最重要的视觉数据，低阶比特平面贡献了
+更精细的灰度细节，存储4个高阶比特平面即可重建原图像（在可接受范围内）。图像相减
+时存在-255~255的灰度等级，所以需归一化或者加255除以2将其重新变为0~255，该方法
+可用于检测运动的物体或者进行change detection；同一场景多张图取平均噪声水平不变。\\
+3.\textbf{直方图均衡化:}（满足单调递增和区间条件），可以使输出图像的灰度分布
+更加均衡，提高对比度。（均衡化过程较为简单）直方图:显示了像素值等级分布情况。
+$R_r(w)$是概率分布函数。\\
+$s=T\left(r\right)=(L-1)\int_{0}^{r}{P_r\left(\omega\right)d\omega=(L-1)\sum_{j=0}^{k}\frac{n_j}{n}}$\\
+4.\textbf{平滑线性滤波器：}（均值滤波器）可用于滤除噪声（也可以滤除不必要的细节）或者
+突出总体特征，但是会模糊边缘.\textbf{统计排序滤波器：}（中值滤波器）有时表现更佳
+（相对average），尤其是滤除椒盐噪声。\textbf{自适应中值滤波器（补）可以滤除空间
+密度更大的椒盐噪声，平滑其他噪声并减小失真，没有边缘效应}。自适应中值滤波：
+if$\ z_{med}-\ z_{min}>0,\ z_{med}\ {-z}_{max}<0$,\\
+$\{if\ \ z_{xy}-\ z_{min}>0,\ z_{xy}-\ z_{max}<0$\\ 
+$\ z_{out}=z_{xy}\ else\ z_{out}=z_{med}\}$\ else\ 扩大所取集合的size\\
+5.\textbf{锐化空间滤波器：}（减少模糊部分并突出边缘）其效果与平滑空间滤波器
+相反（积分与微分之区别）一阶微分$f\left(x+1\right)-f(x)$，二阶微分
+$f\left(x+1\right)+f(x-1)-2f(x)$.
+一阶微分非0值存在于step和ramp的起点以及ramp沿线；二阶微分非0值存在
+于step和ramp的起(终)点；一阶微分产生较粗的边缘，对gray level step有更佳的响应；
+二阶微分对细节（细线、孤立点和噪声）有更佳的响应，而对gray level step有双响应
+（双边缘，更加明显），因此二阶微分在增强细节方面更强。\\
+6.使用\textbf{拉普拉斯算子}锐化图像（中心-4，十字1）。考虑对角项，则掩模系数
+变为（中心-8，外圈1）。使用拉普拉斯算子得到的并不是最终图像，还要根据中心系数的
+正负，用原图像±拉普拉斯图像。\textbf{最终（中心5，十字-1）（中心9，外圈-1）}\\
+7.\textbf{高提升滤波：}$g(x,y)=Af(x,y)\pm\nabla^2f(x,y)$，当A越大，
+则越忽略锐化的作用。\\
+8.\textbf{使用梯度（一阶微分）锐化图像:}我们直接给出
+$g_x=\frac{\partial f}{\partial x}$,$g_y=\frac{\partial f}{\partial y}$这两个模板
+称为Sobel算子，此时的操作为线性操作。
+再对其求向量$\nabla f$的幅值$M(x,y)=\sqrt{{g_x}^2+{g_y}^2}$或者
+近似化$M(x,y)=|gx|+|gy|$，为非线性。\\
+Sobel算子X：-1 0 1;-2 0 2;-1 0 1 Y:-1 -2 -1;0 0 0; 1 2 1;\\
+Roberts交叉梯度算子X:0 -1;1 0 Y:-1 0;0 1;\\
 
 
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.315\linewidth}
-\vspace{0pt}
-这里是第二列的内容。文字会正常换行，这里可以写很多文字来测试换行效果。
-\end{minipage}%
-\hfill
-\begin{minipage}[t]{0.315\linewidth}
-\vspace{0pt}
-这里是第三列的内容。文字会正常换行，这里可以写很多文字来测试换行效果。
+\textbf{第四章：频率域滤波：}\\
+1.图像$f(x,y)$乘以指数项$(-1)^{x+y}$再做傅里叶变换，可将DFT的原点移到
+$F(u-\frac{M}{2},v-\frac{N}{2})$不影响幅度谱。若空间域和频域都用极坐标表示，
+空间域与频域的旋转等价。$F(0,0))$=图像的平均灰度。\\
+2.DFT的幅度谱中，\textbf{低频分量}(幅度谱原点周围)反映了灰度变化缓慢的区域，
+是图像在平滑区域上的外观。\textbf{高频分量}反映了灰度剧变的区域(如边缘噪声)，
+是图像中精细部分。\\
+3.\textbf{一般滤波过程：}1.原图乘以${(-1)}^{x+y}$ 2.DFT得到$F(u,v)$
+3.$F(u,v)$乘以滤波器$H(u,v)$ 4.IDFT之后再乘以${(-1)}^{x+y}$得到输出。\\
+4.\textbf{陷波滤波器}：
 \end{minipage}
+
+\newpage
+
+\begin{minipage}[t]{0.315\linewidth}
+新的第一列内容
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.315\linewidth}
+新的第二列内容
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.315\linewidth}
+新的第三列内容
+\end{minipage}
+
+
 
 \end{document}
