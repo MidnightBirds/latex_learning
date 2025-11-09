@@ -1,5 +1,7 @@
 \documentclass{ctexart}
 \usepackage[landscape, margin=0.5cm]{geometry}
+\usepackage{amssymb}
+
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \begin{document}
@@ -100,21 +102,115 @@ $F(u-\frac{M}{2},v-\frac{N}{2})$不影响幅度谱。若空间域和频域都用
 是图像中精细部分。\\
 3.\textbf{一般滤波过程：}1.原图乘以${(-1)}^{x+y}$ 2.DFT得到$F(u,v)$
 3.$F(u,v)$乘以滤波器$H(u,v)$ 4.IDFT之后再乘以${(-1)}^{x+y}$得到输出。\\
-4.\textbf{陷波滤波器}：
+4.\textbf{陷波滤波器：}$H(u,v)=0\ if\ (u,v)=(\frac{M}{2},\frac{N}{2})$，
+$else\ H(u,v)=1 $.\ 可以使图像的平均灰度为0，而不影响图像的整体外观和细节。\\
+5.\textbf{理想低通滤波器：}，$H(u,v) = 1\ if\left[ D(u,v) \right]< D_0,$
+$\ else\ H(u,v) = 0$\ 
+其中D(u,v)定义为(u,v)与($\frac{M}{2},\frac{N}{2}$)的欧氏距离。
+（注：由于H(u,v)的急剧变化会产生\textbf{振铃现象}）\\
+6.\textbf{高斯低通滤波器：}$H\left(u,v\right)=e^\frac{-D^2(u,v)}{2{D_0}^2}$
+作用：连接断裂处,PS人脸图片上的疤痕或者皱纹。\\
+7.\textbf{巴特沃斯低通滤波器：}$H(u,v)=\frac{1}{1+\left[\frac{D(u,v)}{D_0}\right]^{2n}}$
+截止频率定义为H(u,v)下降为50\%。一阶二阶巴特沃斯滤波器几乎观察不到振铃现象。
+越高阶越接近理想低通。\\
+8.\textbf{理想高通滤波器：}$H(u,v) = 0\ if\left[ D(u,v) \right]< D_0,$
+$\ else\ H(u,v) = 1$\ \\
+9.\textbf{巴特沃斯高通滤波器：}$H(u,v)=\frac{1}{1+\left[\frac{D_0}{D(u,v)}\right]^{2n}}$
+越高阶越接近理想高通。\\
+10.\textbf{高斯高通滤波器：}$H\left(u,v\right)=1-e^\frac{-D^2(u,v)}{2{D_0}^2}$\\
+\textbf{额外：}连续$F(u,v)=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f(x,y)e^{-j2\pi xu}e^{-j2\pi yv}dxdy$\\
+$f(x,y)=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}F(x,y)e^{j2\pi xu}e^{j2\pi yv}dudv$\\
+离散(dft)$F(u,v)=\sum_{x=0}^{M-1}\sum_{y=0}^{N-1}f(x,y)e^{-j2\pi \frac{xu}{M}}e^{-j2\pi \frac{yv}{N}}$\\
+$f(x,y)=\frac{1}{MN}\sum_{x=0}^{M-1}\sum_{y=0}^{N-1}F(x,y)e^{j2\pi \frac{xu}{M}}e^{j2\pi \frac{yv}{N}}$
+
+\textbf{第五章：图像恢复}\\
+1.空域上:$g(x,y)=f(x,y)\ast h(x,y)+n(x,y)$\\
+频域上:$G(u,v)=F(u,v)\cdot H(u,v)+N(u,v)$\\
+图像恢复是由g估计原图像f的过程。\\
+2.噪声分布:高斯(常见)$p(z)=\frac{e^{-\frac{{(z-u)}^2}{2\sigma^2}}}{\sqrt{2\pi}\sigma}$
+瑞利(无人驾驶)、爱尔兰、Gamma、均值、脉冲、椒盐\\
+3.傅里叶谱图有8个点说明原图像有横向纵向对角线的周期性噪声$sin(2\pi u_0x+2\pi v_0y)
+\leftrightarrow j\frac{1}{2}[\delta(u+u_0,v+v_0)-\delta(u-u_0,v-v_0)]$\\
+4.\textbf{带阻滤波器：}$H\left(u,v\right)=\frac{1}{1+{(\frac{D(u,v)W}{{D(u,v)}^2-{D_0}^2})}^{2n}}$
+$H(u,v)=1-e^{-0.5[\frac{D^2(u,v)-D_0^2}{D(u,v)W}]^2}$
 \end{minipage}
 
 \newpage
 
 \begin{minipage}[t]{0.315\linewidth}
-新的第一列内容
+5.\textbf{陷波滤波器：}notch reject:$H(u,v)=\frac{1}{1+{(\frac{{D0}^2}{D1(u,v)D2(u,v)})}^n}$\\
+$H(u,v)=1-e^{-0.5[\frac{D1(u,v) D2(u,v)}{D0^2}]}$ 用以去除噪点：比如说横向纵向噪声\\
+6.\textbf{退化模型：}$H(u,v)=e^{-k{(u^2+v^2)}^{5/6}}$\\
+7.\textbf{逆滤波：}$\hat{F}(u,v)=\frac{G(u,v)}{H(u,v)}=F(u,v)+\frac{N(u,v)}{H(u,v)}$
+则即使我们直到退化过程，由于噪声影响也无法复原。同时必须H不能趋于0，否则会放大噪声。
+解决办法:只取H原点附近的频谱，以外一概不考虑，一般来说能量集中于原点，频域幅度在这较高。\\
+8.\textbf{维纳滤波器：}使用最小均方误差准则设计\\ $\hat{F}=\left[\frac{H^{\ast}(u,v)}
+{\left| H(u,v) \right|  ^2 + S_{\eta}(u,v)/S_f(u,v)}\right]G(u,v)$\\
+\textbf{第九章：形态学图像处理（对于二值图）}\\
+1.平移：$ (B)_z =\left\{c|c=b+z,b\in B \right\}$（如平移到$(z_1,z_2)$）\\
+反射：$ \hat{B} =\left\{w|w=-b,b\in B \right\}$（如$(-x,-y)$反射到$(x,y)$）\\
+Fit:完全正确。Hit：部分正确。Miss：全部错误\\
+2.\textbf{膨胀(Dilation)：}$A\bigoplus B=\left\{ z|(\hat{B})\bigcap A\neq\emptyset \right\}$
+或者定义为A与B的镜像存在Hit关系；膨胀会粗化或者增长物体；膨胀可以修复断裂处，修复表面坑洼。
+\textbf{（注：膨胀不一定能粗化，和结构元有关。）}\\
+3.\textbf{腐蚀(Erosion)：}$A\ominus B= \left\{ z|B_z\subseteq A \right\}$
+或者定义为A与B存在Fit关系；腐蚀缩小或细化了物体，可视为形态学滤波操作，小于结构元的物体都将滤除。
+腐蚀可以分开已连接的物体，可以将物体表面的突出部分剥离。\\
+4.\textbf{开运算：}$A\circ B=(A\ominus  B)\oplus B$即对物体先腐蚀再膨胀，其几何解释为：
+球形结构元B沿物体A的内部边界滑动，其并集即为开操作
+$A\circ B=\bigcup{(B_Z)|(B_Z)\subseteq A}$可以平滑图像轮廓，打断物体间的连接部分，清除突出物。\\
+5.\textbf{闭运算：}$A\bullet B=(A\circ B)\ominus B$即对物体先膨胀再腐蚀，其几何解释为：
+球形结构元B沿物体A的边界滑动，其并集即为闭操作
+$A\bullet B=\bigcap{(B_Z)|(B_Z)\subseteq A}$可以平滑轮廓上的缺口，填充洞口，连接间隙和断裂部分。\\
+6.\textbf{Hit or Miss：}$A \circledast B=\left(A\ominus X\right)\cap[A^C\ominus(W-X)]$
+设感兴趣物体形状为X，B为X及其背景组成的集合，W为比X大一点的小窗，用X腐蚀A产生的集合
+与用（W-X）腐蚀A的补集产生的集合的交集就是击中或击不中变换。\\
+7.\textbf{边缘提取：}$\beta\left(A\right)=A-(A\ominus B)$即可提取边界，B是结构元。\\
+8.\textbf{区域填充：}需设置一个初始点，过程可表示为\\
+$X_k=(X_{k-1}\oplus B)\cap A^C$，直到$X_k=X_{k-1}$，完成区域填充，最终结果图应为$X_k\cup A$\\
+9.连通分量的提取：过程与上面类似，只是将$A^C$替换成A，最终结果图应为$X_k$。\\
+\textbf{第十章：图像分割（基于不连续性与相似性）}\\
+1.灰度变化的不连续性是进行图像分割的基础之一，其处理的图像特征为\textbf{孤立点、线和边缘。}
+对于相似的灰度，根据一组预定义的准则将图像分割为相似的区域。
+\textbf{（阈值处理，区域生长、分裂和聚合）}\\
+
+
+
+
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.315\linewidth}
-新的第二列内容
+2.\textbf{点检测：}使用二阶微分（实际就是进行空间滤波）如：拉普拉斯算子（添加对角项）
+的模板系数之和为0，表明在恒定灰度区域的模板响应为0。设置一个阈值T，若模板响应$R(x,y)>=T$，
+则输出图像在该点的值$g(x,y)=1$，检测到孤立点。\\
+3.\textbf{线检测：}同样可用拉普拉斯算子。由于其产生负值，我们一般进行正阈值处理，
+仅适用拉普拉斯图像的正值。（注：当线宽比模板尺寸大时，会被一个零值分开）
+。若我们对特定方向的线感兴趣，可将模板上对应方向的系数全换成2
+（最后同样要进行阈值处理）\\
+4.\textbf{Ramp模型：}线的厚度与斜率成反比，斜率与模糊程度成反比。\\
+5.微弱的可见噪声也严重影响边缘检测所用的两个关键导数，所以应先进行平滑处理。
+另一方法是对梯度图像进行阈值处理（可能会使部分边缘断开）。若目的是突出主要边缘并尽可能保持连接时，
+实践中通常又做平滑处理又做阈值处理。\\
+6.
+11.\textbf{区域分割：}（注：二维可用四叉树 三维用八叉树）
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.315\linewidth}
-新的第三列内容
+9.\textbf{Ostu方法（最佳全局阈值处理）}：计算快速简单，不受图像亮度和对比度影响。
+但是对噪声敏感，而且只能对单一目标分割；当目标和背景大小相差悬殊时，效果不好。\\
+1\textbf{品红$M=R+B$，青色$C=G+B$，黄色$Y=R+G$}。\\
+2.全彩色图像有24比特的深度，RGB分别为8比特图像。（RGB归一化）
+\textbf{注:RGB不能表征所有颜色 HIS比RGB更易表征颜色。}\\
+3. CMY 模型（面向应用）\textbf{注:CIE国际标准来看显示器和打印机能实现颜色不一样}.\\
+4.\textbf{HSI模型：H为色调，S为饱和度，I为强度}:对锥体模型：离原点在z轴方向的距离
+表示I，当前圆面内用极坐标表示，离圆心的距离r表征S，夹角$\theta$表示H。\\
+5.\textbf{RGB到HSI：}\\
+7.\textbf{灰度分层：}类似于灰度切片，但是将不同分段的像素集合赋予不同的颜色，
+有所区别。（伪彩色）
+8.\\
+9.\textbf{对彩色图像的滤波：}在HIS模型一般只能对I处理\\
+11.\textbf{彩色轮廓提取:} 1.RGB转HSI\ 2.取对应颜色的his，在对应阈值内置白色，
+阈值外置黑色\ 3.滤波\ 4.findContours寻找白色区域轮廓\ 5.drawContours绘制轮廓。
 \end{minipage}
 
 

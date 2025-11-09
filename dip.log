@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.26)  7 NOV 2025 11:10
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.26)  9 NOV 2025 11:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -219,83 +219,93 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen181
 \Gm@layoutvoffset=\dimen182
 \Gm@dimlist=\toks18
-) (./dip.aux)
+) (d:/Latexlive/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (d:/Latexlive/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (./dip.aux)
 \openout1 = `dip.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
-\symlegacymaths=\mathgroup4
+\symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 5.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 5.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 5.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 5.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 5.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 5.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 5.
-LaTeX Font Info:    Redeclaring math accent \check on input line 5.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 5.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 5.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 5.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 5.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 5.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 7.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 7.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 7.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 7.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 7.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 7.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 7.
+LaTeX Font Info:    Redeclaring math accent \check on input line 7.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 7.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 7.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 7.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 7.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 7.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 5.
+(Font)              `operators' in the math version `normal' on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 5.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 7.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 5.
+(Font)              `operators' in the math version `bold' on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 5.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 5.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 5.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 5.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 5.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 5.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 7.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 5.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 5.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 5.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 7.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 5.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 7.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -331,46 +341,57 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 25.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8.5> on input line 25.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.94997> on input line 25.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.25> on input line 25.
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--47
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+(d:/Latexlive/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+ (d:/Latexlive/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 11--49
 \TU/lmr/m/n/8.5 3. \TU/SimSun(0)/m/n/8.5 图 片 的 \TU/lmr/m/n/8.5 Zooming \TU/SimSun(0)/m/n/8.5 和 \TU/lmr/m/n/8.5 Shrinking \TU/SimSun(0)/m/n/8.5 可 用 最 邻 近 插 值 或
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--47
+Underfull \hbox (badness 10000) in paragraph at lines 11--49
 \TU/SimSun(0)/m/n/8.5 者 双 线 性 插 值，|  前 者 的 缺 点 是 精 度 低，|  可 能 会 存 在 灰 度
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--47
+Underfull \hbox (badness 10000) in paragraph at lines 11--49
 \TU/SimSun(0)/m/n/8.5 上 的 不 连 续，|  在 变 化 的 地 方 出 现 明 显 的 锯 齿 状。|  双 线 性：|
  []
 
 
-Underfull \hbox (badness 1824) in paragraph at lines 9--47
+Underfull \hbox (badness 1824) in paragraph at lines 11--49
 \TU/lmr/m/n/8.5 1. \TU/SimSun(0)/m/n/8.5 对 于 空 域，|  我 们 的 操 作 一 般 是 针 对 像 素 的 邻 居。|  若 直 接 对 像
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--47
+Underfull \hbox (badness 10000) in paragraph at lines 11--49
 \TU/SimSun(0)/m/n/8.5 素 本 身 进 行 操 作，|  则 称 为 灰 度 变 换 \TU/lmr/m/n/8.5 s=T(r)\TU/SimSun(0)/m/n/8.5 。|  否 则 为 空 间 滤 波
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--47
+Underfull \hbox (badness 10000) in paragraph at lines 11--49
 \TU/lmr/m/n/8.5 2. \TU/SimSun(0)/m/n/8.5 如 果 想 将 一 个 物 体 从 背 景 分 离，|  可 以 使 用 阈 值 变 换
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--89
+Underfull \hbox (badness 10000) in paragraph at lines 52--91
 
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 96--125
+\TU/lmr/m/n/8.5 5. \TU/SimSun(0)/b/n/8.5 理 想 低 通 滤 波 器：| \TU/SimSun(0)/m/n/8.5 ，| $\OML/cmm/m/it/8.5 H\OT1/cmr/m/n/8.5 (\OML/cmm/m/it/8.5 u; v\OT1/cmr/m/n/8.5 ) = 1 \OML/cmm/m/it/8.5 if [] < D[];$
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 96--125
+\TU/lmr/m/n/8.5 8. \TU/SimSun(0)/b/n/8.5 理 想 高 通 滤 波 器：| $\OML/cmm/m/it/8.5 H\OT1/cmr/m/n/8.5 (\OML/cmm/m/it/8.5 u; v\OT1/cmr/m/n/8.5 ) = 0 \OML/cmm/m/it/8.5 if [] < D[];$
  []
 
 
@@ -378,6 +399,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--89
 [1
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 141--176
+
+ []
+
+
 
 [2] (./dip.aux)
  ***********
@@ -386,12 +412,12 @@ L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7315 strings out of 473832
- 223838 string characters out of 5730863
- 673230 words of memory out of 5000000
- 30335 multiletter control sequences out of 15000+600000
- 563321 words of font info for 66 fonts, out of 8000000 for 9000
+ 7890 strings out of 473832
+ 232524 string characters out of 5730863
+ 689230 words of memory out of 5000000
+ 30891 multiletter control sequences out of 15000+600000
+ 565244 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,5n,111p,384b,360s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,7n,111p,384b,360s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on dip.pdf (2 pages).
