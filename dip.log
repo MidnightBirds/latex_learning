@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.26)  9 NOV 2025 11:29
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.26)  10 NOV 2025 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -395,11 +395,31 @@ Underfull \hbox (badness 3375) in paragraph at lines 96--125
  []
 
 
+Underfull \hbox (badness 1953) in paragraph at lines 126--137
+\TU/lmr/m/n/8.5 4. \TU/SimSun(0)/b/n/8.5 带 阻 滤 波 器：| $\OML/cmm/m/it/8.5 H [] \OT1/cmr/m/n/8.5 = []$ $\OML/cmm/m/it/8.5 H\OT1/cmr/m/n/8.5 (\OML/cmm/m/it/8.5 u; v\OT1/cmr/m/n/8.5 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--137
+
+ []
+
+
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 141--176
+Underfull \hbox (badness 10000) in paragraph at lines 142--177
+
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 183--215
+\TU/SimSun(0)/m/n/8.5 算 法 实 现：| \TU/lmr/m/n/8.5 1. \TU/SimSun(0)/m/n/8.5 获 取 二 值 化 边 缘 图。| \TU/lmr/m/n/8.5 2. \TU/SimSun(0)/m/n/8.5 对 $\OT1/cmr/m/n/8.5 (\OML/cmm/m/it/8.5 r; ^^R\OT1/cmr/m/n/8.5 )$ \TU/SimSun(0)/m/n/8.5 离 散 化，|  给 出
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--215
 
  []
 
@@ -414,7 +434,7 @@ L3 programming layer <2022/07/14>
 Here is how much of TeX's memory you used:
  7890 strings out of 473832
  232524 string characters out of 5730863
- 689230 words of memory out of 5000000
+ 690230 words of memory out of 5000000
  30891 multiletter control sequences out of 15000+600000
  565244 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
