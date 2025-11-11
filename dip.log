@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.26)  10 NOV 2025 16:12
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.26)  11 NOV 2025 15:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -420,6 +420,16 @@ Underfull \hbox (badness 1509) in paragraph at lines 183--215
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 183--215
+
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 219--253
+\OML/cmm/m/it/8.5 ^^R \OT1/cmr/m/n/8.5 = []([])$ \TU/SimSun(0)/m/n/8.5 注：| \TU/lmr/m/n/8.5 B>G \TU/SimSun(0)/m/n/8.5 时，| \TU/lmr/m/n/8.5 H \TU/SimSun(0)/m/n/8.5 为
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--253
 
  []
 
