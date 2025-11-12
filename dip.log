@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.26)  11 NOV 2025 15:12
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.26)  12 NOV 2025 17:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -380,27 +380,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--49
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--91
-
- []
-
-
-Underfull \hbox (badness 1147) in paragraph at lines 96--125
+Underfull \hbox (badness 1147) in paragraph at lines 98--127
 \TU/lmr/m/n/8.5 5. \TU/SimSun(0)/b/n/8.5 理 想 低 通 滤 波 器：| \TU/SimSun(0)/m/n/8.5 ，| $\OML/cmm/m/it/8.5 H\OT1/cmr/m/n/8.5 (\OML/cmm/m/it/8.5 u; v\OT1/cmr/m/n/8.5 ) = 1 \OML/cmm/m/it/8.5 if [] < D[];$
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 96--125
+Underfull \hbox (badness 3375) in paragraph at lines 98--127
 \TU/lmr/m/n/8.5 8. \TU/SimSun(0)/b/n/8.5 理 想 高 通 滤 波 器：| $\OML/cmm/m/it/8.5 H\OT1/cmr/m/n/8.5 (\OML/cmm/m/it/8.5 u; v\OT1/cmr/m/n/8.5 ) = 0 \OML/cmm/m/it/8.5 if [] < D[];$
  []
 
 
-Underfull \hbox (badness 1953) in paragraph at lines 126--137
+Underfull \hbox (badness 1953) in paragraph at lines 128--139
 \TU/lmr/m/n/8.5 4. \TU/SimSun(0)/b/n/8.5 带 阻 滤 波 器：| $\OML/cmm/m/it/8.5 H [] \OT1/cmr/m/n/8.5 = []$ $\OML/cmm/m/it/8.5 H\OT1/cmr/m/n/8.5 (\OML/cmm/m/it/8.5 u; v\OT1/cmr/m/n/8.5 ) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--137
+Underfull \hbox (badness 10000) in paragraph at lines 128--139
 
  []
 
@@ -409,29 +404,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--137
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 142--177
+Underfull \hbox (badness 10000) in paragraph at lines 144--179
 
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 183--215
+Underfull \hbox (badness 1509) in paragraph at lines 185--217
 \TU/SimSun(0)/m/n/8.5 算 法 实 现：| \TU/lmr/m/n/8.5 1. \TU/SimSun(0)/m/n/8.5 获 取 二 值 化 边 缘 图。| \TU/lmr/m/n/8.5 2. \TU/SimSun(0)/m/n/8.5 对 $\OT1/cmr/m/n/8.5 (\OML/cmm/m/it/8.5 r; ^^R\OT1/cmr/m/n/8.5 )$ \TU/SimSun(0)/m/n/8.5 离 散 化，|  给 出
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--215
+Underfull \hbox (badness 10000) in paragraph at lines 185--217
 
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 219--253
+Underfull \hbox (badness 1112) in paragraph at lines 221--255
 \OML/cmm/m/it/8.5 ^^R \OT1/cmr/m/n/8.5 = []([])$ \TU/SimSun(0)/m/n/8.5 注：| \TU/lmr/m/n/8.5 B>G \TU/SimSun(0)/m/n/8.5 时，| \TU/lmr/m/n/8.5 H \TU/SimSun(0)/m/n/8.5 为
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--253
+Underfull \hbox (badness 10000) in paragraph at lines 221--255
 
  []
+
+
+Overfull \vbox (5.38835pt too high) has occurred while \output is active []
 
 
 
