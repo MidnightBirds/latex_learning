@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.26)  12 NOV 2025 17:50
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.26)  14 NOV 2025 22:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -390,12 +390,12 @@ Underfull \hbox (badness 3375) in paragraph at lines 98--127
  []
 
 
-Underfull \hbox (badness 1953) in paragraph at lines 128--139
+Underfull \hbox (badness 1953) in paragraph at lines 128--140
 \TU/lmr/m/n/8.5 4. \TU/SimSun(0)/b/n/8.5 带 阻 滤 波 器：| $\OML/cmm/m/it/8.5 H [] \OT1/cmr/m/n/8.5 = []$ $\OML/cmm/m/it/8.5 H\OT1/cmr/m/n/8.5 (\OML/cmm/m/it/8.5 u; v\OT1/cmr/m/n/8.5 ) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--139
+Underfull \hbox (badness 10000) in paragraph at lines 128--140
 
  []
 
@@ -404,27 +404,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--139
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 144--179
+Underfull \hbox (badness 10000) in paragraph at lines 145--180
 
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 185--217
+Underfull \hbox (badness 1509) in paragraph at lines 186--218
 \TU/SimSun(0)/m/n/8.5 算 法 实 现：| \TU/lmr/m/n/8.5 1. \TU/SimSun(0)/m/n/8.5 获 取 二 值 化 边 缘 图。| \TU/lmr/m/n/8.5 2. \TU/SimSun(0)/m/n/8.5 对 $\OT1/cmr/m/n/8.5 (\OML/cmm/m/it/8.5 r; ^^R\OT1/cmr/m/n/8.5 )$ \TU/SimSun(0)/m/n/8.5 离 散 化，|  给 出
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--217
+Underfull \hbox (badness 10000) in paragraph at lines 186--218
 
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 221--255
+Underfull \hbox (badness 1112) in paragraph at lines 222--256
 \OML/cmm/m/it/8.5 ^^R \OT1/cmr/m/n/8.5 = []([])$ \TU/SimSun(0)/m/n/8.5 注：| \TU/lmr/m/n/8.5 B>G \TU/SimSun(0)/m/n/8.5 时，| \TU/lmr/m/n/8.5 H \TU/SimSun(0)/m/n/8.5 为
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--255
+Underfull \hbox (badness 10000) in paragraph at lines 222--256
 
  []
 
@@ -442,7 +442,7 @@ L3 programming layer <2022/07/14>
 Here is how much of TeX's memory you used:
  7890 strings out of 473832
  232524 string characters out of 5730863
- 690230 words of memory out of 5000000
+ 691230 words of memory out of 5000000
  30891 multiletter control sequences out of 15000+600000
  565244 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
